@@ -7,6 +7,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.ChatColor;
 
 class SignCommand implements CommandExecutor {
 	@SuppressWarnings("unused")
@@ -26,7 +27,7 @@ class SignCommand implements CommandExecutor {
 		if (args.length == 2) {
 			ItemStack is = p.getItemInHand();
 			if ((null == is) || (is.getType().equals(Material.AIR))) {
-				cs.sendMessage("§cHold something in your hand before attempting this command.");
+				cs.sendMessage(ChatColor.getByChar("c") + "cHold something in your hand before attempting this command.");
 				return true;
 			}
 			SpecialItem gift = new SpecialItem(is);
