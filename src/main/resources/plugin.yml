@@ -1,9 +1,9 @@
 name: ItemTagger
-version: 1.1
-authors: [Pangamma]
+version: 1.2
+authors: [Pangamma, blha303]
 website: http://lumengaming.com/
 main: itemtagger.ItemTagger
-description: various name and description related things
+description: Plugin for adding and modifying item metadata
 commands:
   itemtagger:
     description: 'All ItemTagger commands'
