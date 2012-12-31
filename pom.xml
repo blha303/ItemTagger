@@ -3,7 +3,7 @@
   <groupId>itemtagger</groupId>
   <artifactId>ItemTagger</artifactId>
   <version>1.2</version>
-  <name>ItemTagger ${project.version}</name>
+  <name>ItemTagger</name>
   <repositories>
     <repository>
       <id>bukkit-repo</id>
