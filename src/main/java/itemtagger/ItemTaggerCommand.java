@@ -1,4 +1,4 @@
-﻿package itemtagger;
+package itemtagger;
 
 import java.util.ArrayList;
 import java.util.List;
