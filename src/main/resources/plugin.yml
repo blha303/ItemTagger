@@ -1,5 +1,5 @@
 name: ItemTagger
-version: 1.2
+version: '${project.version}'
 authors: [Pangamma, blha303]
 website: http://lumengaming.com/
 main: itemtagger.ItemTagger
