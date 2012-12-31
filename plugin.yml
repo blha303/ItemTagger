@@ -10,5 +10,5 @@ commands:
     usage: 'Usage: /<command>'
     aliases: ['it','tag','itag','gift','nbt','nt']
   sign:
-    description: 'Directs a compass towards the nearest gemstone'
-    usage: 'Usage: /<command>'
+    description: 'Signs an item with From: <from> To: <to>'
+    usage: 'Usage: /sign <from> <to>'
