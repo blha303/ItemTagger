@@ -12,14 +12,10 @@ public class ItemTagger extends JavaPlugin {
 	public void onEnable() {
 		if (!this.hasRunOnce) {
 			getCommand("itemtagger").setExecutor(new ItemTaggerCommand(this));
-			getCommand("sign").setExecutor(new SignCommand(this));
 			this.fm = new FileManager(this);
 
 			this.hasRunOnce = true;
 		}
 		this.fm.load();
-	}
-
-	public void onDisable() {
 	}
 }

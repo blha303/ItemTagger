@@ -6,9 +6,26 @@ main: itemtagger.ItemTagger
 description: various name and description related things
 commands:
   itemtagger:
-    description: 'does everything.'
-    usage: 'Usage: /<command>'
-    aliases: ['it','tag','itag','gift','nbt','nt']
-  sign:
-    description: 'Signs an item with From: <from> To: <to>'
-    usage: 'Usage: /sign <from> <to>'
+    description: 'All ItemTagger commands'
+    usage: 'ItemTagger help: /tag'
+    aliases: ['it','tag','itag','gift','itemtag']
+permissions:
+  itemtagger.*:
+    description: 'Allows access to /tag and all subcommands'
+    children:
+      itemtagger.name: true
+      itemtagger.lore: true
+      itemtagger.book: true
+      itemtagger.heads: true
+  itemtagger.name:
+    description: 'Allows access to /tag set name'
+    default: op
+  itemtagger.lore:
+    description: 'Allows access to /tag set lore and /tag add lore'
+    default: op
+  itemtagger.book:
+    description: 'Allows access to /tag set author and /tag set title'
+    default: op
+  itemtagger.heads:
+    description: 'Allows access to /tag set head'
+    default: op
