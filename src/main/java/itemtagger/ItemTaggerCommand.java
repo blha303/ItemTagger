@@ -41,13 +41,13 @@ public class ItemTaggerCommand implements CommandExecutor {
 		}
 
 		String msg = "";
-		msg = ChatColor.translateAlternateColorCodes('&', msg);
 
 		ItemStack item = p.getItemInHand();
 		if (args[0].equalsIgnoreCase("set")) {
 			for (int i = 2; i < args.length; i++) {
 				msg = msg + args[i] + " ";
 			}
+			msg = ChatColor.translateAlternateColorCodes('&', msg);
 			if (args[1].equalsIgnoreCase("name")) {
 				if (!cs.hasPermission("itemtagger.name")) {
 					cs.sendMessage("You can't use this command.");
@@ -121,6 +121,7 @@ public class ItemTaggerCommand implements CommandExecutor {
 			for (int i = 1; i < args.length; i++) {
 				msg = msg + args[i] + " ";
 			}
+			msg = ChatColor.translateAlternateColorCodes('&', msg);
 			if (!cs.hasPermission("itemtagger.lore")) {
 				return true;
 			}
